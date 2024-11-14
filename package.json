@@ -1,0 +1,25 @@
+{
+  "name": "wassilyjs",
+  "version": "1.0.0",
+  "description": "Infrastructure for building scientific diagrams in 2d and 3d using HTML5 canvases with animations and interactivity.",
+  "files":["dist"],
+  "main":"./dist/wassilyjs.umd.js",
+  "module":"./dist/wassilyjs.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/wassilyjs.es.js",
+      "require": "./dist/wassilyjs.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}

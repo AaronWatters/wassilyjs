@@ -1,0 +1,16 @@
+
+<h1>wassilyjs demo index.</h1>
+
+<p id="name">Loading...</p>
+
+<script type="module">
+    // basic import test
+    import * as main from "./lib/main.js";
+    
+    console.log("name", main.name);
+    var paragraph = document.getElementById("name");
+    paragraph.innerHTML = "name is " + main.name;
+
+    // make main global for testing
+    window.main = main;
+</script>
