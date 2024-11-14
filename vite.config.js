@@ -8,5 +8,9 @@ module.exports = defineConfig({
       name: 'wassilyjs',
       fileName: (format) => `wassilyjs.${format}.js`
     }
-  }
+  },
+  test: {
+    globals: true,
+    environment: 'node',
+  },
 });
